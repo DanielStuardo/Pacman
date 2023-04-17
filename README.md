@@ -7,9 +7,9 @@ Para jugar, debe tener instalada la librería Gadget y compilar. Luego, el juego
 
 Debe tener instalada la librería GADGET para GCC de Linux (Debian y sus derivados Ubuntu, Mint, etc).
 
-Debe tener instalados el terminal RXVT, y los programas APLAY y XSET (aunque estos últimos creo que ya vienen de facto).
+Debe tener instalados el terminal RXVT, y los programas FFPLAY y XSET (aunque estos últimos creo que ya vienen de facto).
 
-Con APLAY ejecuto los efectos de sonido y la música de fondo.
+Con FFPLAY ejecuto los efectos de sonido y la música de fondo, con repetición.
 
 Con XSET redefino el delay y el rate del teclado, para una mejor experiencia de juego.
 

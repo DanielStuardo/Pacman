@@ -27,3 +27,9 @@ donde:
 
 # Screenshots.
 
+![Pacman Game Linux Console](dataPacman/Pacman_initial_screen.png)
+
+![Pacman Game Linux Console](dataPacman/Pacman_play.png)
+
+![Pacman Game Linux Console](dataPacman/pacmanp3.png)
+

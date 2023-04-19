@@ -23,7 +23,10 @@ Con XSET redefino el delay y el rate del teclado, para una mejor experiencia de 
 
 donde:
 
--mr|-mrs establece los efectos de sonido de Pacman (Namco) y de Mrs. Pacman (Midway); -l <1-5> inicia el juego en una de las cinco pantallas del juego, y -c permite continuar el juego pese a perder el último player, reseteando el puntaje.
+* -mr|-mrs establece los efectos de sonido de Pacman (Namco) y de Mrs. Pacman (Midway);
+* -l <1-5> inicia el juego en una de las cinco pantallas del juego,
+* -c permite continuar el juego pese a perder el último player, reseteando el puntaje.
+* -a muestra todos los intermission del juego.
 
 # Screenshots.
 

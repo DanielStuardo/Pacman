@@ -12,11 +12,11 @@
      
      Compile:
      
-     ./ccpre.sh tests/Pacman/pacman -static 
+     ./ccpre.sh <directorio>/pacman -static 
      
      This program MUST BE EXECUTED WHIT:
      
-     rxvt -g 75x103 -insecure -fn "xft:FantasqueSansMono-Regular:pixelsize=5" -e ./tests/pacman
+     ./<directorio>/pacman.sh
      
      test:
      
@@ -34,7 +34,7 @@
 */
 
 #include <gadget/gadget.h>
-#include "tests/pacman.h"
+#include "pacman.h"
 
 LIB_GADGET_START
 
@@ -2102,7 +2102,7 @@ void save_score(int score, int high)
 {
    if( score > high ){
        Stack{
-           Save_string( Int2str(score), "tests/dataPacman/high.txt" );
+           Save_string( Int2str(score), "dataPacman/high.txt" );
        }
    }
 }
@@ -2110,9 +2110,9 @@ void save_score(int score, int high)
 int load_high_score()
 {
    int high=0;
-   if( Exist_file("tests/dataPacman/high.txt")){
+   if( Exist_file("dataPacman/high.txt")){
        Stack{
-           high = Str2int( Load_string("tests/dataPacman/high.txt"));
+           high = Str2int( Load_string("dataPacman/high.txt"));
        } Stack_off;
    }
    return high;
@@ -2465,7 +2465,7 @@ void initial_screen()
      At 15,1; Print "  ███     ▟██████████▙    ▀▀██▀▀    ███████▄▄▄▄█  ▟██████████▙  ████████▄█";
      
      
-     system("aplay -q tests/dataPacman/mspacman_Coin_Credit.wav </dev/null >/dev/null 2>&1 &");
+     system("aplay -q dataPacman/mspacman_Coin_Credit.wav </dev/null >/dev/null 2>&1 &");
      
      int pColor[]={196,201,45,172}, i;
      Iterator up i[0:1:4]{
@@ -2540,7 +2540,7 @@ void play_Act(int nAct)
         Color(BACKGROUND,BACKGROUND);
         Cls;
         At 5,22 ; put_big_message("They meet",121,0);
-        system("aplay -q tests/dataPacman/mspacman_They_Meet_Act_1.wav </dev/null >/dev/null 2>&1 &");
+        system("aplay -q dataPacman/mspacman_They_Meet_Act_1.wav </dev/null >/dev/null 2>&1 &");
         unsigned long t = Tic(), tg=Tic();
         int y=1, yg=1, boca=0, swp=1,swg=0;
         int yb=71, ygb=71;
@@ -2630,7 +2630,7 @@ void play_Act(int nAct)
         Cls;
         At 5,18 ; put_big_message("The craving",121,0);
 
-        system("aplay -q tests/dataPacman/mspacman_The_Chase_Act_2.wav </dev/null >/dev/null 2>&1 &");
+        system("aplay -q dataPacman/mspacman_The_Chase_Act_2.wav </dev/null >/dev/null 2>&1 &");
         sleep(2);
         int sw=1, swp=1, y=1, yb=71, boca=0, x=22;
         int cnt=0, tope=71;
@@ -2747,7 +2747,7 @@ void play_Act(int nAct)
         At 60,10; draw_ascii_pacman(COLOR_PACMAN,BACKGROUND,DIR_RIGHT,1);
         At 60,16; draw_ascii_pacman(225,BACKGROUND,DIR_RIGHT,1);
         
-        system("aplay -q tests/dataPacman/mspacman_Junior_Act_3.wav </dev/null >/dev/null 2>&1 &");
+        system("aplay -q dataPacman/mspacman_Junior_Act_3.wav </dev/null >/dev/null 2>&1 &");
         int swf=1, cnt=0, x=31, y=55, yb=0, swjr=0 ; 
 
         while(swf){
@@ -2847,7 +2847,7 @@ void play_Act(int nAct)
         Color(BACKGROUND,BACKGROUND);
         Cls;
         At 5,18 ; put_big_message("Run son, run!",121,0);
-        system("aplay -q tests/dataPacman/pacman_intermission.wav </dev/null >/dev/null 2>&1 &");
+        system("aplay -q dataPacman/pacman_intermission.wav </dev/null >/dev/null 2>&1 &");
         int swp=1, swg=0, y=71, yg=71, boca=1;
         unsigned long t = Tic(), tg=Tic();
         while ( swp || swg ){
@@ -2879,7 +2879,7 @@ void play_Act(int nAct)
         String PIDPILLS;
         Fn_let( PIDPILLS, put_sound(SND_PILLS));
         usleep(900000);
-        system("aplay -q tests/dataPacman/pacman_intermission.wav </dev/null >/dev/null 2>&1 &");
+        system("aplay -q dataPacman/pacman_intermission.wav </dev/null >/dev/null 2>&1 &");
         
         swp=0; swg=1; y=1; yg=1;
         int swl=0, yl=1, bocal=0, bocajr=0, yjr=1, swjr=0;

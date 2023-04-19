@@ -186,36 +186,36 @@ int topT=0;*/
 /* estos sonidos necestan un controlador de sonidos */
 int sw_sound_p=0;  /* por dfault: Mrs. Pacman */
 
-const char *PAC_EXTRA = "aplay -q tests/dataPacman/mspacman_extrapac.wav </dev/null >/dev/null 2>&1 &";
+const char *PAC_EXTRA = "aplay -q dataPacman/mspacman_extrapac.wav </dev/null >/dev/null 2>&1 &";
 
-const char *MSPAC_EAT = "aplay -q tests/dataPacman/mspacman_death.wav </dev/null >/dev/null 2>&1 &";
-const char *MRPAC_EAT = "aplay -q tests/dataPacman/mrpacman_death.wav </dev/null >/dev/null 2>&1 &";
+const char *MSPAC_EAT = "aplay -q dataPacman/mspacman_death.wav </dev/null >/dev/null 2>&1 &";
+const char *MRPAC_EAT = "aplay -q dataPacman/mrpacman_death.wav </dev/null >/dev/null 2>&1 &";
 
-const char *EAT_FRUIT = "aplay -q tests/dataPacman/pacman_eatfruit.wav </dev/null >/dev/null 2>&1 &";
+const char *EAT_FRUIT = "aplay -q dataPacman/pacman_eatfruit.wav </dev/null >/dev/null 2>&1 &";
 
-const char *MSPAC_INIT = "aplay -q tests/dataPacman/mspacman_beginning.wav </dev/null >/dev/null 2>&1 &";
-const char *MRPAC_INIT = "aplay -q tests/dataPacman/mrpacman_beginning.wav </dev/null >/dev/null 2>&1 &";
+const char *MSPAC_INIT = "aplay -q dataPacman/mspacman_beginning.wav </dev/null >/dev/null 2>&1 &";
+const char *MRPAC_INIT = "aplay -q dataPacman/mrpacman_beginning.wav </dev/null >/dev/null 2>&1 &";
 
-const char* sound[4] = {"aplay -q tests/dataPacman/mspacman_waca2.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataPacman/mspacman_scary_ghost.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataPacman/mspacman_eatghost.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataPacman/mspacman_siren.wav </dev/null >/dev/null 2>&1 &"};
+const char* sound[4] = {"aplay -q dataPacman/mspacman_waca2.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataPacman/mspacman_scary_ghost.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataPacman/mspacman_eatghost.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataPacman/mspacman_siren.wav </dev/null >/dev/null 2>&1 &"};
 
-const char* mrsound[4] = {"aplay -q tests/dataPacman/mrpacman_waca1.wav </dev/null >/dev/null 2>&1 &",
-                          "aplay -q tests/dataPacman/mrpacman_scary_ghost.wav </dev/null >/dev/null 2>&1 &",
-                          "aplay -q tests/dataPacman/mrpacman_eatghost.wav </dev/null >/dev/null 2>&1 &",
-                          "aplay -q tests/dataPacman/mrpacman_siren.wav </dev/null >/dev/null 2>&1 &"};
+const char* mrsound[4] = {"aplay -q dataPacman/mrpacman_waca1.wav </dev/null >/dev/null 2>&1 &",
+                          "aplay -q dataPacman/mrpacman_scary_ghost.wav </dev/null >/dev/null 2>&1 &",
+                          "aplay -q dataPacman/mrpacman_eatghost.wav </dev/null >/dev/null 2>&1 &",
+                          "aplay -q dataPacman/mrpacman_siren.wav </dev/null >/dev/null 2>&1 &"};
 
 
 const char* pills[3] =   {"▟█▙","███","▜█▛"};
 //const char* pills[3] =   {"◢ ◣"," ● ","◥ ◤"};
 
 /* aquí deben ir más laberintos */
-const char* laberinth_files[5] = {"tests/dataPacman/pacman_solid_Lab01.txt",
-                                  "tests/dataPacman/pacman_solid_Lab02.txt",
-                                  "tests/dataPacman/pacman_solid_Lab03.txt",
-                                  "tests/dataPacman/pacman_solid_Lab04.txt",
-                                  "tests/dataPacman/pacman_solid_Lab05.txt"
+const char* laberinth_files[5] = {"dataPacman/pacman_solid_Lab01.txt",
+                                  "dataPacman/pacman_solid_Lab02.txt",
+                                  "dataPacman/pacman_solid_Lab03.txt",
+                                  "dataPacman/pacman_solid_Lab04.txt",
+                                  "dataPacman/pacman_solid_Lab05.txt"
                                   };
 /*
 const char* laberinth_files[4] = {"tests/dataPacman/pacmanLab01.txt",
@@ -223,18 +223,18 @@ const char* laberinth_files[4] = {"tests/dataPacman/pacmanLab01.txt",
                                   "tests/dataPacman/pacmanLab03.txt",
                                   "tests/dataPacman/pacmanLab04.txt"};
 */
-const char* laberinth_dots[5] = {"tests/dataPacman/pacmanDot01.txt",
-                                 "tests/dataPacman/pacmanDot02.txt",
-                                 "tests/dataPacman/pacmanDot03.txt",
-                                 "tests/dataPacman/pacmanDot04.txt",
-                                 "tests/dataPacman/pacmanDot05.txt"
+const char* laberinth_dots[5] = {"dataPacman/pacmanDot01.txt",
+                                 "dataPacman/pacmanDot02.txt",
+                                 "dataPacman/pacmanDot03.txt",
+                                 "dataPacman/pacmanDot04.txt",
+                                 "dataPacman/pacmanDot05.txt"
                                  };
 
-const char* laberinth_ghost_dots[5] = {"tests/dataPacman/phantomDots01.txt",
-                                       "tests/dataPacman/phantomDots02.txt",
-                                       "tests/dataPacman/phantomDots03.txt",
-                                       "tests/dataPacman/phantomDots04.txt",
-                                       "tests/dataPacman/phantomDots05.txt"
+const char* laberinth_ghost_dots[5] = {"dataPacman/phantomDots01.txt",
+                                       "dataPacman/phantomDots02.txt",
+                                       "dataPacman/phantomDots03.txt",
+                                       "dataPacman/phantomDots04.txt",
+                                       "dataPacman/phantomDots05.txt"
                                        };
 
 /* prototipos */
